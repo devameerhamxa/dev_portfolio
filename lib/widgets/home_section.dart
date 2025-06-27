@@ -81,7 +81,7 @@ class HomeSection extends StatelessWidget {
                         speed: Duration(milliseconds: 100),
                       ),
                       TyperAnimatedText(
-                        'Mobile Developer',
+                        'Mobile Application Developer',
                         textStyle: TextStyle(
                           color: AppColors.textPrimary,
                           fontSize: 20,
@@ -124,8 +124,9 @@ class HomeSection extends StatelessWidget {
             child: ClipRRect(
               borderRadius: BorderRadius.circular(20),
               child: Image.asset(
-                'assets/images/profile_photo.jpg',
-                fit: BoxFit.cover,
+                'assets/images/profile_photo.png',
+                fit: BoxFit.contain,
+                filterQuality: FilterQuality.high,
                 errorBuilder: (context, error, stackTrace) {
                   return Container(
                     color: AppColors.cardColor,
@@ -163,8 +164,8 @@ class HomeSection extends StatelessWidget {
           child: ClipRRect(
             borderRadius: BorderRadius.circular(20),
             child: Image.asset(
-              'assets/images/profile_photo.jpg',
-              fit: BoxFit.cover,
+              'assets/images/profile_photo.png',
+              fit: BoxFit.contain,
               errorBuilder: (context, error, stackTrace) {
                 return Container(
                   color: AppColors.cardColor,

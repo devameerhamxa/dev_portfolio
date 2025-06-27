@@ -15,24 +15,44 @@ class PortfolioView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.primaryColor,
+      backgroundColor: Colors.black,
       body: Column(
         children: [
           CustomAppBar(),
           Expanded(
-            child: SingleChildScrollView(
-              child: Obx(() {
-                return IndexedStack(
-                  index: controller.currentIndex.value,
+            child: ScrollbarTheme(
+              data: ScrollbarThemeData(
+                thumbColor: WidgetStateProperty.all(AppColors.accentColor),
+                thickness: WidgetStateProperty.all(8.0),
+                radius: Radius.circular(10),
+              ),
+              child: SingleChildScrollView(
+                controller: controller.scrollController,
+                child: Column(
                   children: [
-                    HomeSection(),
-                    AboutSection(),
-                    ServicesSection(),
-                    ProjectsSection(),
-                    ContactSection(),
+                    Container(
+                      key: controller.sectionKeys[0],
+                      child: HomeSection(),
+                    ),
+                    Container(
+                      key: controller.sectionKeys[1],
+                      child: AboutSection(),
+                    ),
+                    Container(
+                      key: controller.sectionKeys[2],
+                      child: ServicesSection(),
+                    ),
+                    Container(
+                      key: controller.sectionKeys[3],
+                      child: ProjectsSection(),
+                    ),
+                    Container(
+                      key: controller.sectionKeys[4],
+                      child: ContactSection(),
+                    ),
                   ],
-                );
-              }),
+                ),
+              ),
             ),
           ),
         ],

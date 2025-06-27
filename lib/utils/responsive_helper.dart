@@ -31,4 +31,18 @@ class ResponsiveHelper {
       return const EdgeInsets.symmetric(horizontal: 80, vertical: 40);
     }
   }
+
+  static double getAppBarHeight(BuildContext context) {
+    return isMobile(context) ? 70 : 80;
+  }
+
+  static double getNavFontSize(BuildContext context) {
+    if (isMobile(context)) return 12;
+    if (isTablet(context)) return 13;
+    return 14;
+  }
+
+  static double getLogeFontSize(BuildContext context) {
+    return isMobile(context) ? 20 : 24;
+  }
 }

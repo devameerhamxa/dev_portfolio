@@ -57,10 +57,10 @@ class AboutSection extends StatelessWidget {
               ],
             ),
             child: ClipRRect(
-              borderRadius: BorderRadius.circular(20),
+              borderRadius: BorderRadius.circular(120),
               child: Image.asset(
                 'assets/images/about_photo.jpg',
-                fit: BoxFit.cover,
+                fit: BoxFit.contain,
                 errorBuilder: (context, error, stackTrace) {
                   return Container(
                     color: AppColors.cardColor,
@@ -98,10 +98,10 @@ class AboutSection extends StatelessWidget {
             ],
           ),
           child: ClipRRect(
-            borderRadius: BorderRadius.circular(20),
+            borderRadius: BorderRadius.circular(50),
             child: Image.asset(
               'assets/images/about_photo.jpg',
-              fit: BoxFit.cover,
+              fit: BoxFit.contain,
               errorBuilder: (context, error, stackTrace) {
                 return Container(
                   color: AppColors.cardColor,

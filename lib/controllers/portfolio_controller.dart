@@ -1,9 +1,19 @@
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class PortfolioController extends GetxController {
   var currentIndex = 0.obs;
   var hoveredProjectIndex = (-1).obs;
+
+  final ScrollController scrollController = ScrollController();
+  final List<GlobalKey> sectionKeys = [
+    GlobalKey(), // HOME
+    GlobalKey(), // ABOUT
+    GlobalKey(), // SERVICES
+    GlobalKey(), // PROJECTS
+    GlobalKey(), // CONTACT
+  ];
 
   final List<String> navItems = [
     'HOME',
@@ -95,8 +105,28 @@ class PortfolioController extends GetxController {
     'express',
   ];
 
+  @override
+  void onClose() {
+    scrollController.dispose();
+    super.onClose();
+  }
+
   void changeTab(int index) {
     currentIndex.value = index;
+    scrollToSection(index);
+  }
+
+  void scrollToSection(int index) {
+    if (index >= 0 && index < sectionKeys.length) {
+      final context = sectionKeys[index].currentContext;
+      if (context != null) {
+        Scrollable.ensureVisible(
+          context,
+          duration: Duration(milliseconds: 800),
+          curve: Curves.easeInOut,
+        );
+      }
+    }
   }
 
   void setHoveredProject(int index) {
@@ -152,6 +182,9 @@ class PortfolioController extends GetxController {
         break;
       case 'instagram':
         url = 'https://instagram.com/yourusername';
+        break;
+      case 'medium':
+        url = 'https://medium.com/@yourusername';
         break;
     }
     if (url.isNotEmpty) {
