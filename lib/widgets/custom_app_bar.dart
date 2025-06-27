@@ -149,18 +149,22 @@ class CustomAppBar extends StatelessWidget {
                       ),
                     ),
                   ),
-                  child: Text(
-                    item,
-                    style: TextStyle(
-                      color:
-                          controller.currentIndex.value == i
-                              ? AppColors.accentColor
-                              : AppColors.textPrimary,
-                      fontSize: 14,
-                      fontWeight:
-                          controller.currentIndex.value == i
-                              ? FontWeight.bold
-                              : FontWeight.normal,
+
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 8.0),
+                    child: Text(
+                      item,
+                      style: TextStyle(
+                        color:
+                            controller.currentIndex.value == i
+                                ? AppColors.accentColor
+                                : AppColors.textPrimary,
+                        fontSize: 14,
+                        fontWeight:
+                            controller.currentIndex.value == i
+                                ? FontWeight.bold
+                                : FontWeight.normal,
+                      ),
                     ),
                   ),
                 ),

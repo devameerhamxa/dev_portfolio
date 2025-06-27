@@ -252,9 +252,7 @@ class HomeSection extends StatelessWidget {
         _buildSocialIcon(FontAwesomeIcons.facebookF, 'facebook'),
         _buildSocialIcon(FontAwesomeIcons.linkedinIn, 'linkedin'),
         _buildSocialIcon(FontAwesomeIcons.github, 'github'),
-        _buildSocialIcon(FontAwesomeIcons.xTwitter, 'twitter'),
         _buildSocialIcon(FontAwesomeIcons.instagram, 'instagram'),
-        _buildSocialIcon(FontAwesomeIcons.medium, 'medium'),
       ],
     );
   }

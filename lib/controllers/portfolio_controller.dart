@@ -147,7 +147,7 @@ class PortfolioController extends GetxController {
   Future<void> openResume() async {
     // Replace with your Google Drive resume link
     const String resumeUrl =
-        'https://drive.google.com/file/d/your-resume-file-id/view';
+        'https://drive.google.com/file/d/1_bqGZm8YzolZkhdVR8gGgRNcLnr_96X6/view?usp=sharing';
     await launchURL(resumeUrl);
   }
 
@@ -169,22 +169,16 @@ class PortfolioController extends GetxController {
     String url = '';
     switch (platform) {
       case 'github':
-        url = 'https://github.com/yourusername';
+        url = 'https://github.com/devameerhamxa';
         break;
       case 'linkedin':
-        url = 'https://linkedin.com/in/yourusername';
+        url = 'https://www.linkedin.com/in/ameer-hamza-97785a27b/';
         break;
       case 'facebook':
-        url = 'https://facebook.com/yourusername';
-        break;
-      case 'twitter':
-        url = 'https://twitter.com/yourusername';
+        url = 'https://www.facebook.com/ameer.hamxa.58152';
         break;
       case 'instagram':
-        url = 'https://instagram.com/yourusername';
-        break;
-      case 'medium':
-        url = 'https://medium.com/@yourusername';
+        url = 'https://www.instagram.com/ameer_hamxaaa/';
         break;
     }
     if (url.isNotEmpty) {
