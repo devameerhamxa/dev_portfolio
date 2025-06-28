@@ -135,7 +135,7 @@ class AboutSection extends StatelessWidget {
         ),
         SizedBox(height: 20),
         Text(
-          "I'm Ameer Hamza, a Flutter Developer, Technical blog writer and UI/UX Designer.",
+          "I'm Ameer Hamza, a Flutter Developer, Mobile Apps Engineer and UI/UX Designer.",
           style: TextStyle(
             color: AppColors.textPrimary,
             fontSize: 18,
@@ -145,7 +145,7 @@ class AboutSection extends StatelessWidget {
         ),
         SizedBox(height: 20),
         Text(
-          "I'm a fresh graduate with Computer Science as Majors from COMSATS University Islamabad. I have been working with Flutter for the past 2 years and have developed multiple applications for both Android and iOS platforms. I have a keen interest in UI/UX designing and have been working on it for the past 3 years. I have also been writing technical blogs for the past 2 years and have been a part of multiple technical writing communities.",
+          "I hold a Bachelor's degree in Computer Science from FUUAST, Islamabad. Over the past year, I have been actively working with Flutter to develop cross-platform mobile applications for both Android and iOS. My work reflects a strong focus on building efficient, scalable, and user-friendly solutions. Additionally, I have cultivated a deep interest in UI/UX design, dedicating the past year to enhancing my skills in creating intuitive and engaging user experiences.",
           style: TextStyle(
             color: AppColors.textSecondary,
             fontSize: 16,
@@ -186,12 +186,12 @@ class AboutSection extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(width: 20),
-            _buildBadge('assets/images/flutter_badge.png'),
-            SizedBox(width: 10),
-            _buildBadge('assets/images/firebase_badge.png'),
-            SizedBox(width: 10),
-            _buildBadge('assets/images/github_badge.png'),
+            // SizedBox(width: 20),
+            // _buildBadge('assets/images/flutter_badge.png'),
+            // SizedBox(width: 10),
+            // _buildBadge('assets/images/firebase_badge.png'),
+            // SizedBox(width: 10),
+            // _buildBadge('assets/images/github_badge.png'),
           ],
         ),
       ],
@@ -245,7 +245,7 @@ class AboutSection extends StatelessWidget {
             children: [
               _buildInfoRow('Name:', 'Ameer Hamza'),
               SizedBox(height: 10),
-              _buildInfoRow('Age:', '22'),
+              _buildInfoRow('Age:', '24'),
             ],
           ),
         ),
@@ -253,9 +253,9 @@ class AboutSection extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              _buildInfoRow('Email:', 'hamza.6.shakeel@gmail.com'),
+              _buildInfoRow('Email:', 'ameerhamxa1811@gmail.com'),
               SizedBox(height: 10),
-              _buildInfoRow('From:', 'Islamabad, PK'),
+              _buildInfoRow('From:', 'Rawalpindi, PK'),
             ],
           ),
         ),
@@ -286,20 +286,20 @@ class AboutSection extends StatelessWidget {
     );
   }
 
-  Widget _buildBadge(String imagePath) {
-    return Container(
-      width: 40,
-      height: 40,
-      decoration: BoxDecoration(
-        color: AppColors.cardColor,
-        borderRadius: BorderRadius.circular(8),
-      ),
-      child: Image.asset(
-        imagePath,
-        errorBuilder: (context, error, stackTrace) {
-          return Icon(Icons.code, color: AppColors.accentColor);
-        },
-      ),
-    );
-  }
+  // Widget _buildBadge(String imagePath) {
+  //   return Container(
+  //     width: 40,
+  //     height: 40,
+  //     decoration: BoxDecoration(
+  //       color: AppColors.cardColor,
+  //       borderRadius: BorderRadius.circular(8),
+  //     ),
+  //     child: Image.asset(
+  //       imagePath,
+  //       errorBuilder: (context, error, stackTrace) {
+  //         return Icon(Icons.code, color: AppColors.accentColor);
+  //       },
+  //     ),
+  //   );
+  // }
 }

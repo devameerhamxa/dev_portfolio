@@ -98,11 +98,10 @@ class PortfolioController extends GetxController {
     'Flutter',
     'Dart',
     'Firebase',
-    'Python',
-    'dart_frog',
-    'jaspr',
-    'nodejs',
-    'express',
+    'REST APIs',
+    'JavaScript',
+    'Jasper',
+    'Nodejs',
   ];
 
   @override
