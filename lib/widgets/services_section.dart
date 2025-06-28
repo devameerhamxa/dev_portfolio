@@ -86,26 +86,31 @@ class ServicesSection extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            SizedBox(height: 20),
             _buildServiceIcon(service['icon']),
             SizedBox(height: 20),
-            Text(
-              service['title'],
-              style: TextStyle(
-                color: AppColors.textPrimary,
-                fontSize: 18,
-                fontWeight: FontWeight.w600,
+            Expanded(
+              child: Text(
+                service['title'],
+                style: TextStyle(
+                  color: AppColors.textPrimary,
+                  fontSize: 18,
+                  fontWeight: FontWeight.w600,
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.center,
             ),
-            SizedBox(height: 15),
-            Text(
-              service['description'],
-              style: TextStyle(
-                color: AppColors.textSecondary,
-                fontSize: 14,
-                height: 1.5,
+            // SizedBox(height: 15),
+            Expanded(
+              child: Text(
+                service['description'],
+                style: TextStyle(
+                  color: AppColors.textSecondary,
+                  fontSize: 14,
+                  height: 1.5,
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.center,
             ),
           ],
         ),
@@ -122,12 +127,6 @@ class ServicesSection extends StatelessWidget {
         break;
       case 'design':
         iconData = FontAwesomeIcons.paintBrush;
-        break;
-      case 'prototype':
-        iconData = FontAwesomeIcons.rocket;
-        break;
-      case 'writing':
-        iconData = FontAwesomeIcons.penToSquare;
         break;
       case 'github':
         iconData = FontAwesomeIcons.github;

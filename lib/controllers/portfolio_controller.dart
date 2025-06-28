@@ -68,24 +68,14 @@ class PortfolioController extends GetxController {
 
   final List<Map<String, dynamic>> services = [
     {
-      'title': 'Mobile Development',
-      'description': 'Cross-platform mobile app development using Flutter',
+      'title': 'Mobile App Development',
+      'description': 'Cross-platform mobile app development using Flutter/Dart',
       'icon': 'mobile',
     },
     {
       'title': 'UI/UX Design',
       'description': 'Beautiful and intuitive user interface design',
       'icon': 'design',
-    },
-    {
-      'title': 'Rapid Prototyping',
-      'description': 'Quick prototyping and MVP development',
-      'icon': 'prototype',
-    },
-    {
-      'title': 'Technical Writing',
-      'description': 'Technical blog writing and documentation',
-      'icon': 'writing',
     },
     {
       'title': 'Open Source - GitHub',
