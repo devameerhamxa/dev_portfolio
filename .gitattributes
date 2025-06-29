@@ -1,2 +1,10 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+
+# Ignore C++ files for language stats
+*.cpp linguist-vendored
+*.h linguist-vendored
+
+# Force Dart to be recognized
+*.dart linguist-language=Dart
