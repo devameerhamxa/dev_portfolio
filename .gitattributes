@@ -2,9 +2,12 @@
 * text=auto
 
 
-# Ignore C++ files for language stats
+# Ignore C++ and CMake files from language statistics
 *.cpp linguist-vendored
 *.h linguist-vendored
+CMakeLists.txt linguist-vendored
+*.cmake linguist-vendored
 
-# Force Dart to be recognized
+# Force Dart to be the main language
 *.dart linguist-language=Dart
+
