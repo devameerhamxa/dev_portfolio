@@ -221,7 +221,7 @@ class ContactSection extends StatelessWidget {
         _buildSocialIcon(FontAwesomeIcons.facebookF, 'facebook'),
         _buildSocialIcon(FontAwesomeIcons.linkedinIn, 'linkedin'),
         _buildSocialIcon(FontAwesomeIcons.github, 'github'),
-        _buildSocialIcon(FontAwesomeIcons.xTwitter, 'twitter'),
+        // _buildSocialIcon(FontAwesomeIcons.xTwitter, 'twitter'),
         _buildSocialIcon(FontAwesomeIcons.instagram, 'instagram'),
       ],
     );

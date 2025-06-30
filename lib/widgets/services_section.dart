@@ -100,7 +100,6 @@ class ServicesSection extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
             ),
-            // SizedBox(height: 15),
             Expanded(
               child: Text(
                 service['description'],

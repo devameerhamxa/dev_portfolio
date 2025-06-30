@@ -25,44 +25,36 @@ class PortfolioController extends GetxController {
 
   final List<Map<String, dynamic>> projects = [
     {
-      'title': 'Awesome Snackbar',
+      'title': 'Tic-Tac-Toe Game',
       'description':
-          'A Flutter package for beautiful and customizable snackbars with various animations and styles.',
-      'image': 'assets/images/snackbar_project.png',
-      'github': 'https://github.com/yourusername/awesome-snackbar',
-      'tags': ['Flutter', 'Package', 'UI/UX'],
+          'A simple yet addictive Tic Tac Toe game built with Flutter & AI Agent.',
+      'image': 'assets/images/splash_logo.jpg',
+      'github': 'https://github.com/devameerhamxa/tic_tac_toa-with-AI_agent',
+      'tags': ['Flutter', 'Ai-Game', 'UI/UX'],
     },
     {
-      'title': 'Holy Qur\'an App',
+      'title': 'Rent-a-Car App',
       'description':
-          'A comprehensive Quran reading app with translation, search, and bookmarking features.',
-      'image': 'assets/images/quran_app.png',
-      'github': 'https://github.com/yourusername/holy-quran-app',
-      'tags': ['Flutter', 'Mobile', 'Islamic'],
+          'A car rental app that allows users to book cars online with ease.',
+      'image': 'assets/images/rent_car.jpg',
+      'github': 'https://github.com/devameerhamxa/Rent-a-Car',
+      'tags': ['Flutter', 'Mobile', 'UI/UX'],
     },
     {
-      'title': 'MedKit - Pharmacy App',
+      'title': 'Kitchen Recipes App',
       'description':
-          'A pharmacy management system with inventory tracking and prescription management.',
-      'image': 'assets/images/medkit_app.png',
-      'github': 'https://github.com/yourusername/medkit-app',
-      'tags': ['Flutter', 'Healthcare', 'Management'],
+          'A recipe app that provides a collection of delicious kitchen recipes.',
+      'image': 'assets/images/recipe.jpg',
+      'github': 'https://github.com/devameerhamxa/Kitchen-Recipes',
+      'tags': ['Flutter', 'Mobile', 'UI/UX'],
     },
     {
-      'title': 'Here I Am - Location App',
+      'title': 'E-commerce App',
       'description':
-          'A location-based social app for sharing your current location with friends and family.',
-      'image': 'assets/images/location_app.png',
-      'github': 'https://github.com/yourusername/here-i-am',
-      'tags': ['Flutter', 'Location', 'Social'],
-    },
-    {
-      'title': 'COVID-19 Tracker',
-      'description':
-          'Stay updated with latest COVID-19 statistics and safety guidelines.',
-      'image': 'assets/images/covid_app.png',
-      'github': 'https://github.com/yourusername/covid-tracker',
-      'tags': ['Flutter', 'Health', 'API'],
+          'A complete e-commerce app with product listings, cart, and checkout features.',
+      'image': 'assets/images/estore.jpg',
+      'github': 'https://github.com/devameerhamxa/E_store',
+      'tags': ['Flutter', 'Mobile', 'UI/UX'],
     },
   ];
 
