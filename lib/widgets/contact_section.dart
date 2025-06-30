@@ -52,7 +52,7 @@ class ContactSection extends StatelessWidget {
           child: _buildContactCard(
             icon: FontAwesomeIcons.locationDot,
             title: 'Location',
-            subtitle: 'Islamabad, PK',
+            subtitle: 'Rawalpindi, PK',
             onTap: null,
           ),
         ),
@@ -61,7 +61,7 @@ class ContactSection extends StatelessWidget {
           child: _buildContactCard(
             icon: FontAwesomeIcons.phone,
             title: 'Phone',
-            subtitle: '+92 346 0159889',
+            subtitle: '+92-308 8116237',
             onTap: () => controller.makePhoneCall(),
           ),
         ),
@@ -70,7 +70,7 @@ class ContactSection extends StatelessWidget {
           child: _buildContactCard(
             icon: FontAwesomeIcons.envelope,
             title: 'Email',
-            subtitle: 'hamza.6.shakeel@gmail.com',
+            subtitle: 'ameerhamxa1811@gmail.com',
             onTap: () => controller.sendEmail(),
           ),
         ),
@@ -84,21 +84,21 @@ class ContactSection extends StatelessWidget {
         _buildContactCard(
           icon: FontAwesomeIcons.locationDot,
           title: 'Location',
-          subtitle: 'Islamabad, PK',
+          subtitle: 'Rawalpindi, PK',
           onTap: null,
         ),
         SizedBox(height: 20),
         _buildContactCard(
           icon: FontAwesomeIcons.phone,
           title: 'Phone',
-          subtitle: '+92 346 0159889',
+          subtitle: '+92-308 8116237',
           onTap: () => controller.makePhoneCall(),
         ),
         SizedBox(height: 20),
         _buildContactCard(
           icon: FontAwesomeIcons.envelope,
           title: 'Email',
-          subtitle: 'hamza.6.shakeel@gmail.com',
+          subtitle: 'ameerhamxa1811@gmail.com',
           onTap: () => controller.sendEmail(),
         ),
       ],
