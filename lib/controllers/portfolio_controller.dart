@@ -36,7 +36,7 @@ class PortfolioController extends GetxController {
       'title': 'Rent-a-Car App',
       'description':
           'A car rental app that allows users to book cars online with ease.',
-      'image': 'assets/images/rent_car.jpg',
+      'image': 'assets/images/rent_car.png',
       'github': 'https://github.com/devameerhamxa/Rent-a-Car',
       'tags': ['Flutter', 'Mobile', 'UI/UX'],
     },
@@ -44,7 +44,7 @@ class PortfolioController extends GetxController {
       'title': 'Kitchen Recipes App',
       'description':
           'A recipe app that provides a collection of delicious kitchen recipes.',
-      'image': 'assets/images/recipe.jpg',
+      'image': 'assets/images/recipe.png',
       'github': 'https://github.com/devameerhamxa/Kitchen-Recipes',
       'tags': ['Flutter', 'Mobile', 'UI/UX'],
     },
@@ -52,7 +52,7 @@ class PortfolioController extends GetxController {
       'title': 'E-commerce App',
       'description':
           'A complete e-commerce app with product listings, cart, and checkout features.',
-      'image': 'assets/images/estore.jpg',
+      'image': 'assets/images/estore.png',
       'github': 'https://github.com/devameerhamxa/E_store',
       'tags': ['Flutter', 'Mobile', 'UI/UX'],
     },

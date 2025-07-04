@@ -254,9 +254,9 @@ class CustomAppBar extends StatelessWidget {
   Widget _buildResumeButton(BuildContext context) {
     bool isMobile = ResponsiveHelper.isMobile(context);
 
-    return Padding(
-      padding: const EdgeInsets.only(right: 100.0),
-      child: Flexible(
+    return Flexible(
+      child: Padding(
+        padding: const EdgeInsets.only(right: 100.0),
         child: ElevatedButton(
           onPressed: () => controller.openResume(),
           style: ElevatedButton.styleFrom(
