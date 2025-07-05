@@ -18,8 +18,6 @@ Welcome to the **Ameer Hamza** portfolio application, built with Flutter and Get
 * **GetX** for state management and navigation
 * **Git & GitHub** for version control
 
-```
-
 ## 📬 Contact
 
 * **Name**: Ameer Hamza
