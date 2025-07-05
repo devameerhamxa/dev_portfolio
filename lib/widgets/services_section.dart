@@ -86,7 +86,7 @@ class ServicesSection extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(height: 20),
+            SizedBox(height: 10),
             _buildServiceIcon(service['icon']),
             SizedBox(height: 20),
             Expanded(

@@ -230,6 +230,22 @@ class HomeSection extends StatelessWidget {
                   ),
                   speed: Duration(milliseconds: 100),
                 ),
+                TyperAnimatedText(
+                  'Mobile Application Developer',
+                  textStyle: TextStyle(
+                    color: AppColors.textPrimary,
+                    fontSize: 16,
+                  ),
+                  speed: Duration(milliseconds: 100),
+                ),
+                TyperAnimatedText(
+                  'UI/UX Designer',
+                  textStyle: TextStyle(
+                    color: AppColors.textPrimary,
+                    fontSize: 16,
+                  ),
+                  speed: Duration(milliseconds: 100),
+                ),
               ],
               repeatForever: true,
               pause: Duration(milliseconds: 1000),
