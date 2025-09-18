@@ -137,12 +137,12 @@ class PortfolioController extends GetxController {
   }
 
   Future<void> sendEmail() async {
-    const String email = 'mailto:hamza.6.shakeel@gmail.com';
+    const String email = 'mailto:ameerhamxa1811@gmail.com';
     await launchURL(email);
   }
 
   Future<void> makePhoneCall() async {
-    const String phone = 'tel:+923460159889';
+    const String phone = 'tel:+923088116237';
     await launchURL(phone);
   }
 

@@ -52,7 +52,7 @@ class ContactSection extends StatelessWidget {
           child: _buildContactCard(
             icon: FontAwesomeIcons.locationDot,
             title: 'Location',
-            subtitle: 'Rawalpindi, PK',
+            subtitle: 'Islamabad, PK',
             onTap: null,
           ),
         ),
@@ -60,7 +60,7 @@ class ContactSection extends StatelessWidget {
         Expanded(
           child: _buildContactCard(
             icon: FontAwesomeIcons.phone,
-            title: 'Phone',
+            title: 'Phone/WhatsApp',
             subtitle: '+92-308 8116237',
             onTap: () => controller.makePhoneCall(),
           ),
@@ -84,13 +84,13 @@ class ContactSection extends StatelessWidget {
         _buildContactCard(
           icon: FontAwesomeIcons.locationDot,
           title: 'Location',
-          subtitle: 'Rawalpindi, PK',
+          subtitle: 'Islamabad, PK',
           onTap: null,
         ),
         SizedBox(height: 20),
         _buildContactCard(
           icon: FontAwesomeIcons.phone,
-          title: 'Phone',
+          title: 'Phone/WhatsApp',
           subtitle: '+92-308 8116237',
           onTap: () => controller.makePhoneCall(),
         ),
@@ -203,7 +203,7 @@ class ContactSection extends StatelessWidget {
           Divider(color: AppColors.cardColor, thickness: 1),
           SizedBox(height: 20),
           Text(
-            '© 2024 Ameer Hamza. All rights reserved.',
+            '© ${DateTime.now().year} Ameer Hamza. All rights reserved.',
             style: TextStyle(color: AppColors.textSecondary, fontSize: 12),
             textAlign: TextAlign.center,
           ),
