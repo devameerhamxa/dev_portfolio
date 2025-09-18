@@ -145,7 +145,13 @@ class AboutSection extends StatelessWidget {
         ),
         SizedBox(height: 20),
         Text(
-          "I hold a Bachelor's degree in Computer Science from FUUAST, Islamabad. Over the past year, I have been actively working with Flutter to develop cross-platform mobile applications for both Android and iOS. My work reflects a strong focus on building efficient, scalable, and user-friendly solutions. Additionally, I have cultivated a deep interest in UI/UX design, dedicating the past year to enhancing my skills in creating intuitive and engaging user experiences.",
+          "I hold a Bachelor's degree in Computer Science from FUUAST, Islamabad. "
+          "With over ${calculateExperience(DateTime(2024, 2, 1))} of experience, "
+          "I have been actively working with Flutter to develop cross-platform mobile "
+          "applications for both Android and iOS. My work reflects a strong focus on "
+          "building efficient, scalable, and user-friendly solutions. Additionally, "
+          "I have cultivated a deep interest in UI/UX design, dedicating the past year "
+          "to enhancing my skills in creating intuitive and engaging user experiences.",
           style: TextStyle(
             color: AppColors.textSecondary,
             fontSize: 16,
@@ -245,7 +251,15 @@ class AboutSection extends StatelessWidget {
             children: [
               _buildInfoRow('Name:', 'Ameer Hamza'),
               SizedBox(height: 10),
-              _buildInfoRow('Age:', '24'),
+              _buildInfoRow(
+                'Age:',
+                _calculateAge(DateTime(2000, 8, 16)).toString(),
+              ),
+              SizedBox(height: 10),
+              _buildInfoRow(
+                'Experience:',
+                calculateExperience(DateTime(2024, 2, 1)),
+              ),
             ],
           ),
         ),
@@ -255,7 +269,7 @@ class AboutSection extends StatelessWidget {
             children: [
               _buildInfoRow('Email:', 'ameerhamxa1811@gmail.com'),
               SizedBox(height: 10),
-              _buildInfoRow('From:', 'Rawalpindi, PK'),
+              _buildInfoRow('From:', 'Islamabad, PK'),
             ],
           ),
         ),
@@ -284,6 +298,32 @@ class AboutSection extends StatelessWidget {
         ),
       ],
     );
+  }
+
+  // Function to calculate age dynamically
+  int _calculateAge(DateTime birthDate) {
+    DateTime today = DateTime.now();
+    int age = today.year - birthDate.year;
+
+    // If today's date is before the birthday in the current year, subtract 1
+    if (today.month < birthDate.month ||
+        (today.month == birthDate.month && today.day < birthDate.day)) {
+      age--;
+    }
+    return age;
+  }
+
+  String calculateExperience(DateTime startDate) {
+    DateTime today = DateTime.now();
+
+    // Calculate difference in months
+    int months =
+        (today.year - startDate.year) * 12 + today.month - startDate.month;
+
+    // Convert months into half-year steps
+    double experience = (months / 6).floor() * 0.5;
+
+    return "${experience.toStringAsFixed(1)}+ years";
   }
 
   // Widget _buildBadge(String imagePath) {
