@@ -135,7 +135,7 @@ class AboutSection extends StatelessWidget {
         ),
         SizedBox(height: 20),
         Text(
-          "I'm Ameer Hamza, a Flutter Developer, Mobile Apps Engineer and UI/UX Designer.",
+          "I'm Ameer Hamza, a Flutter Developer and Mobile Apps Engineer.",
           style: TextStyle(
             color: AppColors.textPrimary,
             fontSize: 18,
@@ -147,11 +147,10 @@ class AboutSection extends StatelessWidget {
         Text(
           "I hold a Bachelor's degree in Computer Science from FUUAST, Islamabad. "
           "With over ${calculateExperience(DateTime(2024, 2, 1))} of experience, "
-          "I have been actively working with Flutter to develop cross-platform mobile "
-          "applications for both Android and iOS. My work reflects a strong focus on "
-          "building efficient, scalable, and user-friendly solutions. Additionally, "
-          "I have cultivated a deep interest in UI/UX design, dedicating the past year "
-          "to enhancing my skills in creating intuitive and engaging user experiences.",
+          "I have been actively working with Flutter to develop and deploy cross-platform mobile applications for both Android and iOS. "
+          "I have successfully delivered production-ready apps, with APKs published on the Google Play Store and applications deployed on the Apple App Store. "
+          "My work focuses on building efficient, scalable, and user-friendly solutions following best practices. "
+          "Additionally, I have a strong interest in UI/UX design, with the ability to convert designs into pixel-perfect screens and production-ready code.",
           style: TextStyle(
             color: AppColors.textSecondary,
             fontSize: 16,
@@ -260,6 +259,8 @@ class AboutSection extends StatelessWidget {
                 'Experience:',
                 calculateExperience(DateTime(2024, 2, 1)),
               ),
+              SizedBox(height: 10),
+              _buildInfoRow('Visa Status:', 'Open to Work'),
             ],
           ),
         ),
@@ -269,7 +270,9 @@ class AboutSection extends StatelessWidget {
             children: [
               _buildInfoRow('Email:', 'ameerhamxa1811@gmail.com'),
               SizedBox(height: 10),
-              _buildInfoRow('From:', 'Islamabad, PK'),
+              _buildInfoRow('From:', 'Dubai, UAE'),
+              SizedBox(height: 10),
+              _buildInfoRow('Nationality:', 'Pakistan'),
             ],
           ),
         ),

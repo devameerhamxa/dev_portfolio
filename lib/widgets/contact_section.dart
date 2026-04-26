@@ -52,7 +52,7 @@ class ContactSection extends StatelessWidget {
           child: _buildContactCard(
             icon: FontAwesomeIcons.locationDot,
             title: 'Location',
-            subtitle: 'Islamabad, PK',
+            subtitle: 'Dubai, UAE',
             onTap: null,
           ),
         ),
@@ -61,7 +61,7 @@ class ContactSection extends StatelessWidget {
           child: _buildContactCard(
             icon: FontAwesomeIcons.phone,
             title: 'Phone/WhatsApp',
-            subtitle: '+92-308 8116237',
+            subtitle: '+971-541963548',
             onTap: () => controller.makePhoneCall(),
           ),
         ),
@@ -84,14 +84,14 @@ class ContactSection extends StatelessWidget {
         _buildContactCard(
           icon: FontAwesomeIcons.locationDot,
           title: 'Location',
-          subtitle: 'Islamabad, PK',
+          subtitle: 'Dubai, UAE',
           onTap: null,
         ),
         SizedBox(height: 20),
         _buildContactCard(
           icon: FontAwesomeIcons.phone,
           title: 'Phone/WhatsApp',
-          subtitle: '+92-308 8116237',
+          subtitle: '+971-541963548',
           onTap: () => controller.makePhoneCall(),
         ),
         SizedBox(height: 20),
@@ -106,7 +106,7 @@ class ContactSection extends StatelessWidget {
   }
 
   Widget _buildContactCard({
-    required IconData icon,
+    required FaIconData icon,
     required String title,
     required String subtitle,
     VoidCallback? onTap,
@@ -227,7 +227,7 @@ class ContactSection extends StatelessWidget {
     );
   }
 
-  Widget _buildSocialIcon(IconData icon, String platform) {
+  Widget _buildSocialIcon(FaIconData icon, String platform) {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 10),
       child: InkWell(

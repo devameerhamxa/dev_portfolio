@@ -88,14 +88,6 @@ class HomeSection extends StatelessWidget {
                         ),
                         speed: Duration(milliseconds: 100),
                       ),
-                      TyperAnimatedText(
-                        'UI/UX Designer',
-                        textStyle: TextStyle(
-                          color: AppColors.textPrimary,
-                          fontSize: 20,
-                        ),
-                        speed: Duration(milliseconds: 100),
-                      ),
                     ],
                     repeatForever: true,
                     pause: Duration(milliseconds: 1000),
@@ -103,7 +95,7 @@ class HomeSection extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 40),
-              _buildSocialIcons(),
+              _buildSocialIcons(context),
             ],
           ),
         ),
@@ -253,15 +245,15 @@ class HomeSection extends StatelessWidget {
           ],
         ),
         SizedBox(height: 40),
-        _buildSocialIcons(),
+        _buildSocialIcons(context),
       ],
     );
   }
 
-  Widget _buildSocialIcons() {
+  Widget _buildSocialIcons(BuildContext context) {
     return Row(
       mainAxisAlignment:
-          ResponsiveHelper.isMobile(Get.context!)
+          ResponsiveHelper.isMobile(context)
               ? MainAxisAlignment.center
               : MainAxisAlignment.start,
       children: [
@@ -273,7 +265,7 @@ class HomeSection extends StatelessWidget {
     );
   }
 
-  Widget _buildSocialIcon(IconData icon, String platform) {
+  Widget _buildSocialIcon(FaIconData icon, String platform) {
     return Padding(
       padding: EdgeInsets.only(right: 20),
       child: InkWell(
