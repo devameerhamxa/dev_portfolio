@@ -25,12 +25,20 @@ class PortfolioController extends GetxController {
 
   final List<Map<String, dynamic>> projects = [
     {
-      'title': 'Tic-Tac-Toe Game',
+      'title': 'Harmelix',
       'description':
-          'A simple yet addictive Tic Tac Toe game built with Flutter & AI Agent.',
-      'image': 'assets/images/splash_logo.jpg',
-      'github': 'https://github.com/devameerhamxa/tic_tac_toa-with-AI_agent',
-      'tags': ['Flutter', 'Ai-Game', 'UI/UX'],
+          'Harmelix is a salon booking app that lets you find nearby salons, choose services, and book appointments quickly and easily.',
+      'image': 'assets/images/harmelix.png',
+      'github': 'https://apps.apple.com/us/app/harmelix/id6698866035',
+      'tags': [
+        'Flutter',
+        'Firebase',
+        'Stripe',
+        'In-app Purchases',
+        'Google Maps',
+        'iOS',
+        'Android',
+      ],
     },
     {
       'title': 'Rent-a-Car App',
@@ -49,12 +57,21 @@ class PortfolioController extends GetxController {
       'tags': ['Flutter', 'Mobile', 'UI/UX'],
     },
     {
-      'title': 'E-commerce App',
+      'title': 'QueryQ',
       'description':
-          'A complete e-commerce app with product listings, cart, and checkout features.',
-      'image': 'assets/images/estore.png',
-      'github': 'https://github.com/devameerhamxa/E_store',
-      'tags': ['Flutter', 'Mobile', 'UI/UX'],
+          'QueryQ is a multi-channel platform that unifies WhatsApp, Facebook, and Instagram messages for efficient communication management.',
+      'image': 'assets/images/queryq.png',
+      'github':
+          'https://play.google.com/store/apps/details?id=com.veevotech.query_q&hl=en',
+      'tags': [
+        'Flutter',
+        'Firebase',
+        'REST APIs',
+        'WebSockets',
+        'AI Integration',
+        'iOS',
+        'Android',
+      ],
     },
   ];
 
@@ -142,7 +159,7 @@ class PortfolioController extends GetxController {
   }
 
   Future<void> makePhoneCall() async {
-    const String phone = 'tel:+923088116237';
+    const String phone = 'tel:+971541963548';
     await launchURL(phone);
   }
 

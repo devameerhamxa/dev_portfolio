@@ -89,27 +89,24 @@ class ServicesSection extends StatelessWidget {
             SizedBox(height: 10),
             _buildServiceIcon(service['icon']),
             SizedBox(height: 20),
-            Expanded(
-              child: Text(
-                service['title'],
-                style: TextStyle(
-                  color: AppColors.textPrimary,
-                  fontSize: 18,
-                  fontWeight: FontWeight.w600,
-                ),
-                textAlign: TextAlign.center,
+            Text(
+              service['title'],
+              style: TextStyle(
+                color: AppColors.textPrimary,
+                fontSize: 18,
+                fontWeight: FontWeight.w600,
               ),
+              textAlign: TextAlign.center,
             ),
-            Expanded(
-              child: Text(
-                service['description'],
-                style: TextStyle(
-                  color: AppColors.textSecondary,
-                  fontSize: 14,
-                  height: 1.5,
-                ),
-                textAlign: TextAlign.center,
+            SizedBox(height: 10),
+            Text(
+              service['description'],
+              style: TextStyle(
+                color: AppColors.textSecondary,
+                fontSize: 14,
+                height: 1.5,
               ),
+              textAlign: TextAlign.center,
             ),
           ],
         ),
@@ -118,14 +115,14 @@ class ServicesSection extends StatelessWidget {
   }
 
   Widget _buildServiceIcon(String iconType) {
-    IconData iconData;
+    FaIconData iconData;
 
     switch (iconType) {
       case 'mobile':
-        iconData = FontAwesomeIcons.mobileAlt;
+        iconData = FontAwesomeIcons.mobileScreen;
         break;
       case 'design':
-        iconData = FontAwesomeIcons.paintBrush;
+        iconData = FontAwesomeIcons.paintbrush;
         break;
       case 'github':
         iconData = FontAwesomeIcons.github;
